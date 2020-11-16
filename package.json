@@ -1,7 +1,7 @@
 {
-  "name": "react-svg-placeholder",
+  "name": "@abduljabbar-aj/react-svg-placeholder",
   "version": "1.0.0",
-  "description": "Animated SVG placeholders for React",
+  "description": "Animated rectangular SVG-based placeholders for React",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,6 +17,5 @@
   "bugs": {
     "url": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder/issues"
   },
-  "homepage": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder#readme"
 }
