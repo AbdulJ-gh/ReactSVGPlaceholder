@@ -1,8 +1,8 @@
-import Rect from './rect'
+import React from 'react'
+import Rect from './Rect.jsx'
 
 // multiple = false || columns || rows || columns-repeat || rows-repeat
-
-function placeholderRect({
+export default function PlaceholderRect({
 	rect: {x, y, duration, padding, radius, name} = {},
 	multiple = false,
 	repeat = 1,
@@ -35,20 +35,18 @@ function placeholderRect({
 
 
 	// Map function
-	const mapRects = rects => rects.map((rect) => new Rect(rect).create())
+	const mapRects = rects => rects.map((rect, i) => <Rect {...{key: i, ...rect}}/>)
 	/** Multiple **/
-
-	console.log(multiple)
 
 	switch (multiple) {
 		case false:
-			return new Rect({x, y, duration, padding, radius, name}).create()
+			return <Rect {...{x, y, duration, padding, radius, name}}/>
 		case 'columns':
 		case 'rows':
 			return <div {...{className, style}} >{mapRects(rects)}</div>
 		case 'columns-repeat':
 		case 'rows-repeat':
-			return placeholderRect({
+			return PlaceholderRect({
 				multiple: multiple.includes('rows') ? 'rows' : 'columns',
 				rects: Array(repeat).fill({x, y, duration, padding, radius, name}),
 			})
@@ -56,5 +54,3 @@ function placeholderRect({
 			throw new Error('Unsupported "multiple" property passed')
 	}
 }
-
-module.exports = placeholderRect

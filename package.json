@@ -1,8 +1,11 @@
 {
   "name": "@abduljabbar-aj/react-svg-placeholder",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Animated rectangular SVG-based placeholders for React",
-  "main": "index.js",
+  "main": "lib/PlaceholderRect.js",
+  "scripts": {
+    "build": "webpack"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder.git"
@@ -17,5 +20,29 @@
   "bugs": {
     "url": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder/issues"
   },
-  "homepage": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder#readme"
+  "homepage": "https://github.com/AbdulJabbar-AJ/ReactSVGPlaceholder#readme",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "path": "^0.12.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3"
+  }
 }
