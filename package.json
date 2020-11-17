@@ -1,6 +1,6 @@
 {
   "name": "@abduljabbar-aj/react-svg-placeholder",
-  "version": "1.0.5",
+  "version": "1.0.12",
   "description": "Animated rectangular SVG-based placeholders for React",
   "main": "lib/PlaceholderRect.js",
   "scripts": {

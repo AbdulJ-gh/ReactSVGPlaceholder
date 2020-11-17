@@ -13,36 +13,36 @@ function Samples() {
 
 			<div>COLUMNS REPEAT</div>
 			<PlaceholderRect {...{
-				multiple: 'columns-repeat',
+				multiple: 'column-repeat',
 				repeat: 2,
-				rect: {x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+				rect: {x: 144, y: 24, name: 'test'}
 			}} />
 
 			<div>COLUMNS BESPOKE</div>
 			<PlaceholderRect {...{
-				multiple: 'columns',
+				multiple: 'column',
 				rects: [
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 80, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+					{x: 144, y: 24, name: 'test'},
+					{x: 80, y: 24, name: 'test'},
+					{x: 144, y: 24, name: 'test'}
 				]
 			}} />
 			<PlaceholderRect {...{
-				multiple: 'columns',
+				multiple: 'column',
 				alignment: 'center',
 				rects: [
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 80, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+					{x: 144, y: 24, name: 'test'},
+					{x: 80, y: 24, name: 'test'},
+					{x: 144, y: 24, name: 'test'}
 				]
 			}} />
 			<PlaceholderRect {...{
-				multiple: 'columns',
+				multiple: 'column',
 				alignment: 'flex-end',
 				rects: [
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 80, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+					{x: 144, y: 24,  name: 'test'},
+					{x: 80, y: 24, name: 'test'},
+					{x: 144, y: 24, name: 'test'}
 				]
 			}} />
 
@@ -50,29 +50,29 @@ function Samples() {
 
 			<div>ROWS REPEAT</div>
 			<PlaceholderRect {...{
-				multiple: 'rows-repeat',
+				multiple: 'row-repeat',
 				repeat: 3,
-				rect: {x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+				rect: {x: 144, y: 24, name: 'test'}
 			}} />
 
 
 
 			<div>ROWS BESPOKE</div>
 			<PlaceholderRect {...{
-				multiple: 'rows',
+				multiple: 'row',
 				alignment: 'center',
 				rects: [
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 80, y: 20, radius: 2, padding: 2, name: 'test'},
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+					{x: 144, y: 24, name: 'test'},
+					{x: 80, y: 20, name: 'test'},
+					{x: 144, y: 24, name: 'test'}
 				]
 			}} />
 			<PlaceholderRect {...{
-				multiple: 'rows',
+				multiple: 'row',
 				rects: [
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'},
-					{x: 80, y: 36, radius: 2, padding: 2, name: 'test'},
-					{x: 144, y: 24, radius: 2, padding: 2, name: 'test'}
+					{x: 144, y: 24, name: 'test'},
+					{x: 80, y: 36, name: 'test'},
+					{x: 144, y: 24, name: 'test'}
 				]
 			}} />
 		</div>
